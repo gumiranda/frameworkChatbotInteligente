@@ -4,14 +4,14 @@ O framework chatbot inteligente facilita a integração com a API de processamen
 Através do framework é possível definir os comportamentos resultantes de ações programadas e utilizar seus parâmetros.
 
 Para utilizar o framework inclua em seu projeto a pasta 'modulochatbot' presente no código fonte.
-Dentro do arquivo build.gradle presente na pasta 'app' do projeto inclua a referência da pasta do framework nas dependências do projeto.
+Dentro do arquivo **build.gradle** presente na pasta **app** do projeto, inclua a referência da pasta do framework nas suas dependências.
 
 ```
     compile project(path: ':modulochatbot')
 ```
 
-Para integrar o aplicativo com o seu projeto do DialogFlow é preciso configurar o app passando seu client access token que é gerado pela plataforma e está presente na tela de configuração na parte inferior(Como ilustrado abaixo).Selecione na tela de configurações a versão 1 da api(V1 API).
-(clientkey.png)
+Para integrar o aplicativo com o seu projeto do DialogFlow é preciso configurar o app passando seu client access token que é gerado pela plataforma e está presente na tela de configuração na parte inferior(Como ilustrado abaixo).
+Selecione na tela de configurações a versão 1 da api(V1 API).(/clientkey.png)
 
 
 * [Executando o código de exemplo](#codigo_exemplo)
@@ -25,19 +25,14 @@ Para integrar o aplicativo com o seu projeto do DialogFlow é preciso configurar
 
 O framework chatbot inteligente traz para o usuário um exemplo de código que exemplifica o uso de ações e parâmetros para que o usuário possa manipular e personalizar o comportamento do bot criado na plataforma DialogFlow.
 Use os seguintes passos para executar o código de exemplo:
-1. Crie um agente inteligente na plataforma DialogFlow .Para mais detalhes consulte a [Documentação oficial] (https://dialogflow.com/docs).
+1. Crie um agente inteligente na plataforma DialogFlow .Para mais detalhes consulte a [Documentação oficial](http://dialogflow.com/docs).
 2. Abra o [Android Studio](https://developer.android.com/sdk/installing/studio.html).
 Preferencialmente na versão 2.3.3.
-3. Vá até **Ferramentas > Android > SDK Manager ** e certifique-se de que a build tools 25.0.0 está instalada. Caso não esteja, instale e a referencie no arquivo build.gradle presente na pasta 'app' do projeto
-4. Dentro do arquivo MainActivity presente na pasta **app/src/main/java/com/example/marikota/ ** acrescente no método **setConfig** seu client access token obtido anteriormente .
-5. Dentro do método **setFalaInicial** defina uma mensagem de boas vindas do chatbot.
-6. Através da criação de instâncias da classe AcaoTeste é possível trabalhar com ações definidas dentro das intents da plataforma DialogFlow.
-Passe como construtor da classe AcaoTeste o mesmo nome das ações criadas na plataforma DialogFlow.
-Para definir o comportamento das ações entre na classe AcaoTeste e modifique o método sobrescrito **executaAcao()** de acordo com os nomes das ações criadas na classe principal da aplicação.
-Para trabalhar com parâmetros use o método **retornaParametro** como ilustrado na classe.
-7. Vincule um dispositivo Android ativando seu modo de debug. Caso não tenha dispositivo crie um emulador de máquina virtual Android no Android Studio para executar o app.
-8. Clique no menu Run > Debug e escolha o seu dispositivo.
-9. Escreva textos na parte inferior da tela no app e clique no botão inferior direito para enviar as mensagens ao bot.
+3. Vá até **Ferramentas>Android>SDK Manager** e certifique-se de que a build tools 25.0.0 está instalada. Caso não esteja, instale e a referencie no arquivo build.gradle presente na pasta 'app' do projeto
+4. Dentro do arquivo MainActivity presente na pasta **app/src/main/java/com/example/marikota/** acrescente no método **setConfig** seu client access token obtido anteriormente .
+5. Vincule um dispositivo Android ativando seu modo de debug. Caso não tenha dispositivo crie um emulador de máquina virtual Android no Android Studio para executar o app.
+6. Clique no menu **Run** **>** **Debug** e escolha o seu dispositivo.
+7. Escreva textos na parte inferior da tela no app e clique no botão inferior direito para enviar as mensagens ao bot.
 
 
 # <a name="seu_proprio_app" />Começando com o seu próprio app
