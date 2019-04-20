@@ -16,10 +16,10 @@ Selecione na tela de configurações a versão 1 da api(V1 API).(/clientkey.png)
 
 * [Executando o código de exemplo](#codigo_exemplo)
 * [Começando com o seu próprio app](#seu_proprio_app)
-    * [Primeira classe]
-    * [Segunda classe]
-    * [Classe AcaoTeste]
-* [Executando o App]
+    * [Primeira classe](#primeira_classe)
+    * [Segunda classe](#segunda_classe)
+    * [Classe AcaoTeste](#classe_acao_teste)
+* [Executando o App](#executando_app)
 
 # <a name="codigo_exemplo" />Executando o código de exemplo do framework chatbot inteligente
 
@@ -36,10 +36,11 @@ Preferencialmente na versão 2.3.3.
 
 
 # <a name="seu_proprio_app" />Começando com o seu próprio app
+
 Essa seção descreve o que é preciso fazer para integrar seu app com o framework chatbot inteligente.
 Primeiramente é necessária a criação de duas classes Activity no projeto. Uma irá chamar o splash screen presente no framework. A outra é invocada por essa classe após o splash screen do framework ser executado.
 
-##Primeira classe
+## <a name="primeira_classe" />Primeira classe
 Em primeiro lugar é preciso importar o módulo presente na pasta 'modulochatbot' que você incluiu anteriormente em seu projeto.
 ```
 import chatbotbiblio.modulochatbot.*;
@@ -66,7 +67,8 @@ Logo depois criamos uma thread que irá invocar a segunda classe a ser implement
         myThread.start();
 ```
 
-##Segunda classe
+## <a name="segunda_classe" />Segunda classe
+
 A segunda classe necessariamente deve extender a classe principal do framework, como mostrado abaixo:
 
 ```
@@ -90,7 +92,8 @@ Caso não haja nenhuma , a criação da classe não é necessária.
 Através da criação de instâncias da classe AcaoTeste é possível trabalhar com ações definidas dentro das intents da plataforma DialogFlow.
 Para isso é preciso passar como construtor da classe AcaoTeste o mesmo nome das ações criadas na plataforma DialogFlow.
 
-##Classe AcaoTeste
+## <a name="classe_acao_teste" />Classe AcaoTeste
+
 Para definir o comportamento das ações entre na classe AcaoTeste modifique o método sobrescrito **executaAcao()** de acordo com os nomes das ações criadas na classe principal da aplicação.
 Para trabalhar com parâmetros use o método **retornaParametro** como ilustrado no exemplo a seguir.
 
@@ -124,7 +127,8 @@ Através da estrutura de ifs como exemplo, definimos um código personalizado pa
 A partir do método **RetornaRespostaBot** nós recuperamos as falas geradas pelo bot para responder a interação com o usuário. Com isso ,dentro do if ilustrado no código acima pode-se definir o tratamento de diversas situações a partir de uma resposta fixada na API DialogFlow.
 
 
-# Executando o App
+## <a name="executando_app" />Executando o app
+
 1. Vincule um dispositivo Android no seu computador, ou crie uma máquina virtual Android pelo AndroidStudio.7
 2. Certifique-se de que seu dispositivo Android está com o modo debug ativado e ligado ao computador.Ou verifique se sua máquina virtual está pronta.
 3. Selecione sua aplicação para executar no Android Studio e clique no botão Debug
