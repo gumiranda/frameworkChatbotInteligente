@@ -1,6 +1,6 @@
 package com.example.android.marikota;
 
-import chatbotbiblio.modulochatbot.Acao;
+import chatbotbiblio.modulochatbot.*;
 
 /**
  * Created by Samsung on 19/04/2019.
@@ -22,6 +22,7 @@ public class AcaoTeste extends Acao {
             //faz tal coisa
 
             String parametroValor = this.retornaParametro("parametro");
+            this.BotFala(parametroValor);
             //faz alguma coisa com o parametro
 System.out.println(parametroValor);
         }
@@ -33,4 +34,5 @@ System.out.println(parametroValor);
             //faz outra coisa
         }
     }
+
 }

@@ -23,8 +23,23 @@ public class Acao {
     public void executaAcao(){
 
     }
+
+    private boolean enviaResposta(String text) {
+        if (text.length() == 0)
+            return false;
+        MainActivity m = new MainActivity();
+
+        m.chatArrayAdapter.add(new ChatMessage(!m.rightSide, text));
+        return true;
+    }
+    public void BotFala(String fala){
+        MainActivity.sendResponse(fala);
+        TTS.speak(fala);
+    }
+
+
     public String RetornaRespostaBot(){
-        return this.res.getFulfillment().getSpeech();
+        return this.getResult().getFulfillment().getSpeech();
     }
 
 }

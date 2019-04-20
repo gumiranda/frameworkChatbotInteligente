@@ -65,7 +65,7 @@ import static java.lang.Boolean.TRUE;
 
 public class MainActivity extends AppCompatActivity implements AIListener {
     private static final String TAG = "ChatActivity";
-    private ChatArrayAdapter chatArrayAdapter;
+    public static ChatArrayAdapter chatArrayAdapter;
     private ListView listView;
     private EditText chatText;
     private FloatingActionButton sendButton;
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements AIListener {
     private ArrayList<Acao> acoes = new ArrayList<Acao>();
     private String config;
     private String falaInicial = "lalala";
-    private boolean rightSide = true; //true if you want message on right rightSide
+    public static boolean rightSide = true; //true if you want message on right rightSide
 
     //addition
     private AIDataService aiDataService;
@@ -246,7 +246,7 @@ try {
         }
     }
 
-    private boolean sendResponse(String text) {
+    public static boolean sendResponse(String text) {
         if (text.length() == 0)
             return false;
         chatArrayAdapter.add(new ChatMessage(!rightSide, text));
