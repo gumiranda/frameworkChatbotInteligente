@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Marikota Cook</string>
+    <string name="send">Enviar</string>
+    <string name="text_hint">Diga alguma coisa…</string>
+    <string name="sample">Sample text</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configurações</string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
