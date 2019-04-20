@@ -1,6 +1,6 @@
 # DOCUMENTAÇÃO Framework Android Chatbot Inteligente usando a API DialogFlow 
 
-O framework chatbot inteligente facilita a integração com a API de processamento de linguagem natural DialogFlow em dispositivos Android.Com ela podemos criar diferentes cenários de diálogos que interagem com o usuário diretamente através de intents e possíveis ações definidas pelo programador.
+O framework chatbot inteligente facilita a integração com a API de processamento de linguagem natural DialogFlow em dispositivos Android. Com ela podemos criar diferentes cenários de diálogos que interagem com o usuário diretamente através de intents e possíveis ações definidas pelo programador.
 Através do framework é possível definir os comportamentos resultantes de ações programadas e utilizar seus parâmetros.
 
 Para utilizar o framework inclua em seu projeto a pasta 'modulochatbot' presente no código fonte.
