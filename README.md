@@ -12,7 +12,7 @@ Dentro do arquivo **build.gradle** presente na pasta **app** do projeto, inclua 
 
 Para integrar o aplicativo com o seu projeto do DialogFlow é preciso configurar o app passando seu client access token que é gerado pela plataforma e está presente na tela de configuração na parte inferior(Como ilustrado abaixo).
 Selecione na tela de configurações a versão 1 da api(V1 API).
-![Client Access Token](clientkey.png)
+![Client Access Token](clientkey.PNG)
 
 
 * [Executando o código de exemplo](#codigo_exemplo)
