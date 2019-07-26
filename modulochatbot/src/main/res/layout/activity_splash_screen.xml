@@ -17,5 +17,5 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/athena" />
+        app:srcCompat="@drawable/marikota" />
 </LinearLayout>
